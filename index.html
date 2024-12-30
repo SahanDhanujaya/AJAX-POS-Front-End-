@@ -34,17 +34,18 @@
 </nav>
 <!--customer form-->
 <main id="customer-form">
+    <!-- input fields -->
     <form action="">
         <div class="form-floating mb-3">
-            <input style="min-height: 0px; height: 50px;" type="email" class="form-control" id="firstName" placeholder="first name">
-            <label for="firstName">First Name</label>
+            <input style="min-height: 0px; height: 50px;" type="text" class="form-control" id="customerId" placeholder="customer id">
+            <label for="customerId">Customer-ID</label>
         </div>
         <div class="form-floating mb-3">
-            <input style="min-height: 0px; height: 50px;" type="email" class="form-control" id="secondName" placeholder="second name">
-            <label for="secondName">Second Name</label>
+            <input style="min-height: 0px; height: 50px;" type="text" class="form-control" id="name" placeholder="name">
+            <label for="name">Name</label>
         </div>
         <div class="form-floating mb-3">
-            <input style="min-height: 0px; height: 50px;" type="email" class="form-control" id="address" placeholder="address">
+            <input style="min-height: 0px; height: 50px;" type="text" class="form-control" id="address" placeholder="address">
             <label for="address">Address</label>
         </div>
         <div class="form-floating mb-3">
@@ -52,16 +53,17 @@
             <label for="email">Email</label>
         </div>
         <div class="form-floating mb-3">
-            <input style="min-height: 0px; height: 50px;" type="email" class="form-control" id="mobile" placeholder="mobile">
+            <input style="min-height: 0px; height: 50px;" type="number" class="form-control" id="mobile" placeholder="mobile">
             <label for="mobile">Mobile</label>
         </div>
-        <div id="customer-button">
+        <div id="btn">
             <button type="button" class="btn btn-outline-success">Save</button>
             <button type="button" class="btn btn-outline-secondary">Update</button>
             <button type="button" class="btn btn-outline-danger">Delete</button>
             <button type="button" class="btn btn-outline-dark">Clear</button>
         </div>
     </form>
+    <!-- customer table -->
     <section>
         <table class="table table-dark table-striped">
             <thead>
@@ -74,6 +76,45 @@
         </table>
     </section>
 </main>
+<!-- item section -->
+ <main id="item-form">
+    <!-- input fields -->
+    <form action="">
+        <div class="form-floating mb-3">
+            <input style="min-height: 0px; height: 50px;" type="text" class="form-control" id="itemId" placeholder="item id">
+            <label for="itemId">Item-ID</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input style="min-height: 0px; height: 50px;" type="text" class="form-control" id="item" placeholder="item">
+            <label for="item">Item</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input style="min-height: 0px; height: 50px;" type="number" class="form-control" id="address" placeholder="price">
+            <label for="price">Price</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input style="min-height: 0px; height: 50px;" type="number" class="form-control" id="qty" placeholder="qty">
+            <label for="qty">QTY</label>
+        </div>
+        <div id="btn">
+            <button type="button" class="btn btn-outline-success">Save</button>
+            <button type="button" class="btn btn-outline-secondary">Update</button>
+            <button type="button" class="btn btn-outline-danger">Delete</button>
+            <button type="button" class="btn btn-outline-dark">Clear</button>
+        </div>
+    </form>
+    <!-- item table -->
+    <section>
+        <table class="table table-dark table-striped">
+            <thead>
+                <td>ID</td>
+                <td>Item</td>
+                <td>Price</td>
+                <td>QTY</td>
+            </thead>
+        </table>
+    </section>
+ </main>
 <script src="js/jquery-3.7.1.min.js"></script>
 <script>
     /*$('#customerModal').hide();
