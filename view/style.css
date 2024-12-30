@@ -66,6 +66,9 @@ main section{
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     border: none;
 }
+#place-order{
+    margin-top: 6%;
+}
 #place-order>section:last-child{
     padding: 2%;
     border-radius: 10px;
